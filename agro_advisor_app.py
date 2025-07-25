@@ -160,7 +160,7 @@ if st.button(txt["predict_button"]):
 
         for i, (crop, prob) in enumerate(zip(crops, probs)):
             st.markdown(f"""
-                <div style='background: blue; border-radius: 12px; padding: 16px; margin-bottom: 10px;'>
+                <div style='background:  #e8f5e9; border-radius: 12px; padding: 16px; margin-bottom: 10px;'>
                     <h3 style='color:#2e7d32;'>{i+1}. {crop.title()}</h3>
                     <b>{txt['chance']}:</b> <span style='color:#d84315;font-size:18px'>{prob*100:.2f}%</span>
                     <h4 style='color:#e65100;'>{txt['future_diseases']}</h4>
